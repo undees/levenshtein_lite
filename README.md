@@ -1,5 +1,7 @@
 # levenshtein_lite
 
+[![CI](https://github.com/undees/levenshtein_lite/actions/workflows/ci.yml/badge.svg)](https://github.com/undees/levenshtein_lite/actions/workflows/ci.yml)
+
 A fast, hand-tuned, Unicode-aware, allocation-savvy implementation of the Levenshtein string distance algorithm.
 
 ## Installation
