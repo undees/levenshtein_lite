@@ -1,0 +1,52 @@
+GIT
+  remote: https://github.com/undees/allocation_tracer.git
+  revision: 57652f67085bb208abe4c34d21229f06efd05856
+  ref: 57652f67085bb208abe4c34d21229f06efd05856
+  specs:
+    allocation_tracer (0.6.3)
+
+PATH
+  remote: .
+  specs:
+    levenshtein_lite (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    benchmark-ips (2.14.0)
+    concurrent-ruby (1.3.5)
+    diff-lcs (1.6.2)
+    faker (3.5.1)
+      i18n (>= 1.8.11, < 2)
+    i18n (1.14.7)
+      concurrent-ruby (~> 1.0)
+    rake (13.2.1)
+    rspec (3.13.0)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.3)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.4)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.4)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-support (3.13.3)
+
+PLATFORMS
+  arm64-darwin-24
+  ruby
+
+DEPENDENCIES
+  allocation_tracer!
+  benchmark-ips (~> 2.14)
+  bundler (~> 2.6)
+  faker (~> 3.5)
+  levenshtein_lite!
+  rake (~> 13.2)
+  rspec (~> 3.13)
+
+BUNDLED WITH
+   2.6.7
