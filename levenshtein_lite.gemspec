@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Erin Paget"]
   spec.email         = ["erin.dees@hey.com"]
 
-  spec.summary       = %q{Fast, allocation-lite Levenshtein distance in pure Ruby.}
+  spec.summary       = %q{Fast, allocation-lite, Unicode-aware Levenshtein distance in pure Ruby.}
   spec.homepage      = "https://github.com/undees/levenshtein_lite"
   spec.license       = "MIT"
 
