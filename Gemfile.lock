@@ -34,6 +34,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.3)
+    yard (0.9.37)
 
 PLATFORMS
   arm64-darwin-24
@@ -47,6 +48,7 @@ DEPENDENCIES
   levenshtein_lite!
   rake (~> 13.2)
   rspec (~> 3.13)
+  yard (~> 0.9)
 
 BUNDLED WITH
    2.6.7

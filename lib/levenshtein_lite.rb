@@ -1,6 +1,12 @@
 require "levenshtein_lite/version"
 
 module LevenshteinLite
+  # Computes the Levenshtein distance between two strings.
+  #
+  # @param s1 [String]
+  # @param s2 [String]
+  # @return [Integer] number of changes to transform s1 to s2
+
   def self.distance(s1, s2)
     return s1.length if s2.empty?
     return s2.length if s1.empty?

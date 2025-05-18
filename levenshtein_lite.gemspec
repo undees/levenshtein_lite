@@ -35,6 +35,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 13.2"
   spec.add_development_dependency "rspec", "~> 3.13"
   spec.add_development_dependency "faker", "~> 3.5"
+  spec.add_development_dependency "yard", "~> 0.9"
   spec.add_development_dependency "benchmark-ips", "~> 2.14"
   spec.add_development_dependency "allocation_tracer", "~> 0.6"
 end
