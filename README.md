@@ -1,6 +1,7 @@
 # levenshtein_lite
 
-[![CI](https://github.com/undees/levenshtein_lite/actions/workflows/ci.yml/badge.svg)](https://github.com/undees/levenshtein_lite/actions/workflows/ci.yml)
+- [![CI](https://github.com/undees/levenshtein_lite/actions/workflows/ci.yml/badge.svg)](https://github.com/undees/levenshtein_lite/actions/workflows/ci.yml)
+- [![Gem Version](https://img.shields.io/gem/v/levenshtein_lite.svg)](https://rubygems.org/gems/levenshtein_lite)
 
 A fast, hand-tuned, Unicode-aware, allocation-savvy implementation of the Levenshtein string distance algorithm.
 
