@@ -1,4 +1,4 @@
-# LevenshteinLite
+# levenshtein_lite
 
 A fast, hand-tuned, Unicode-aware, allocation-savvy implementation of the Levenshtein string distance algorithm.
 
