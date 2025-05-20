@@ -18,5 +18,6 @@ group :development do
   gem "rubocop-rake", "~> 0.7"
   gem "rubocop-rspec", "~> 3.6"
   gem "standard", "~> 1.50"
+  gem "steep", "~> 1.10"
   gem "yard", "~> 0.9"
 end
