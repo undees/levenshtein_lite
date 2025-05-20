@@ -18,12 +18,15 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject do |f|
-      f.match(%r{^(spec|bin|benchmark)/}) ||
+      f.match(%r{^(spec|bin|benchmark|.github)/}) ||
         %w[
-          .rspec
           .gitignore
-          .travis.yml
+          .rspec
+          .rubocop.yml
           .ruby-version
+          .standard.yml
+          .yardopts
+          levenshtein_lite.gemspec
           Rakefile
         ].include?(f)
     end
