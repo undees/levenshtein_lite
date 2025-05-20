@@ -26,8 +26,11 @@ Gem::Specification.new do |spec|
           .ruby-version
           .standard.yml
           .yardopts
-          levenshtein_lite.gemspec
+          Gemfile
+          Gemfile.lock
           Rakefile
+          Steepfile
+          levenshtein_lite.gemspec
         ].include?(f)
     end
   end
