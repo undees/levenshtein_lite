@@ -37,4 +37,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.metadata["rubygems_mfa_required"] = "true"
+  spec.metadata["ruby-signature"] = "RBS"
 end

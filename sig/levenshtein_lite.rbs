@@ -1,0 +1,4 @@
+# lib/levenshtein_lite.rb
+module LevenshteinLite
+  def self.distance: (String, String) -> Integer
+end

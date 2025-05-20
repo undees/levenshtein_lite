@@ -1,0 +1,4 @@
+# lib/levenshtein_lite/version.rb
+module LevenshteinLite
+  VERSION: String
+end
