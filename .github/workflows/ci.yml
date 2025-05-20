@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Install build tools
-        run: apk add --no-cache build-base git
+        run: apk add --no-cache build-base git libffi-dev
 
       - name: Check out repo
         uses: actions/checkout@v4
