@@ -8,7 +8,7 @@ GIT
 PATH
   remote: .
   specs:
-    levenshtein_lite (1.0.0)
+    levenshtein_lite (1.0.1)
 
 GEM
   remote: https://rubygems.org/
