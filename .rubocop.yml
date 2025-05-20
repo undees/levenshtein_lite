@@ -1,0 +1,10 @@
+plugins:
+  - rubocop-rake
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+
+RSpec/ExampleLength:
+  CountAsOne:
+    - method_call

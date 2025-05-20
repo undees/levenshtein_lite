@@ -27,15 +27,19 @@ Gem::Specification.new do |spec|
           ].include?(f)
     end
   end
+
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_development_dependency "allocation_tracer", "~> 0.6"
+  spec.add_development_dependency "benchmark-ips", "~> 2.14"
   spec.add_development_dependency "bundler", "~> 2.6"
+  spec.add_development_dependency "faker", "~> 3.5"
   spec.add_development_dependency "rake", "~> 13.2"
   spec.add_development_dependency "rspec", "~> 3.13"
-  spec.add_development_dependency "faker", "~> 3.5"
+  spec.add_development_dependency "rubocop-rake", "~> 0.7"
+  spec.add_development_dependency "rubocop-rspec", "~> 3.6"
+  spec.add_development_dependency "standard", "~> 1.50"
   spec.add_development_dependency "yard", "~> 0.9"
-  spec.add_development_dependency "benchmark-ips", "~> 2.14"
-  spec.add_development_dependency "allocation_tracer", "~> 0.6"
 end
