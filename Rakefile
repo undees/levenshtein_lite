@@ -1,17 +1,19 @@
+# frozen_string_literal: true
+
 require "bundler/gem_tasks"
 require "rspec/core/rake_task"
 require "standard/rake"
 
 RSpec::Core::RakeTask.new(:spec)
 
-task :default => :spec
+task default: :spec
 
 desc "Run the default benchmarks"
-task :benchmark => [:"benchmark:time", :"benchmark:memory"]
+task benchmark: %i[benchmark:time benchmark:memory]
 
 namespace :benchmark do
   desc "Run the default timing benchmarks"
-  task :time => :"time:fast"
+  task time: :"time:fast"
 
   namespace :time do
     desc "Run only the basic benchmark"

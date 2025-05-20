@@ -8,3 +8,20 @@ AllCops:
 RSpec/ExampleLength:
   CountAsOne:
     - method_call
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/QuotedSymbols:
+  Enabled: false
+
+# Linters to disable because Standard applies them differently:
+
+Layout/ArgumentAlignment:
+  Enabled: false
+
+Layout/FirstArgumentIndentation:
+  Enabled: false
+
+Style/TernaryParentheses:
+  Enabled: false

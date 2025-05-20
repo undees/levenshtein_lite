@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "allocation_tracer"
 require "faker"
 require_relative "../lib/levenshtein_lite"
@@ -17,7 +19,7 @@ sorted = results.sort_by { |(*_), (count, *)| count }
 
 sorted.each do |(path, line, type, klass), (count, *_)|
   file = File.basename(path)
-  noun = count == 1 ? "alloc" : "allocs"
+  noun = (count == 1) ? "alloc" : "allocs"
 
   puts "#{file}:#{line} #{klass} (#{type}) => #{count} #{noun}"
 end

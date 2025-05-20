@@ -1,24 +1,24 @@
+# frozen_string_literal: true
+
 require "timeout"
 require "faker"
 require "benchmark/ips"
 
 require_relative "../lib/levenshtein_lite"
 
-def levenshtein_recursive(a, b)
-  return a.length if b.empty?
-  return b.length if a.empty?
+def levenshtein_recursive(str1, str2)
+  return str1.length if str2.empty?
+  return str2.length if str1.empty?
 
-  tail_a = a[1..]
-  tail_b = b[1..]
+  tail1 = str1[1..]
+  tail2 = str2[1..]
 
-  if a[0] == b[0]
-    return levenshtein_recursive(tail_a, tail_b)
-  end
+  return levenshtein_recursive(tail1, tail2) if str1[0] == str2[0]
 
   1 + [
-    levenshtein_recursive(tail_a, b),
-    levenshtein_recursive(a, tail_b),
-    levenshtein_recursive(tail_a, tail_b)
+    levenshtein_recursive(tail1, str2),
+    levenshtein_recursive(str1, tail2),
+    levenshtein_recursive(tail1, tail2)
   ].min
 end
 
@@ -26,8 +26,8 @@ if ARGV.include?("--slow")
   GC.start
 
   Benchmark.ips do |bm|
-    s1 = "hello, hello".freeze
-    s2 = "hallo, hallo".freeze
+    s1 = "hello, hello"
+    s2 = "hallo, hallo"
 
     bm.report("LevenshteinLite.distance") do
       LevenshteinLite.distance(s1, s2)
@@ -36,7 +36,7 @@ if ARGV.include?("--slow")
     bm.report("levenshtein_recursive") do
       Timeout.timeout(10) { levenshtein_recursive(s1, s2) }
     rescue Timeout::Error
-      warn "baseline recursive solution timed out ¯\\\_(ツ)\_/¯"
+      warn 'baseline recursive solution timed out ¯\\_(ツ)_/¯'
     end
 
     bm.compare!
